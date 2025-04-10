@@ -49,7 +49,12 @@ const Header = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedSegment])
   return (
-    <div className='flex flex-1 items-center justify-between bg-background-body px-4'>
+    <div className='flex flex-1 items-center justify-between bg-[#E9EEFE] px-4'>
+      {/*
+       ~ di-llm-rag-web | Author: webber | Date: 2025-04-10
+       delete | bg-background-body
+       add | bg-#E9EEFE
+       */}
       <div className='flex items-center'>
         {isMobile && <div
           className='flex h-8 w-8 cursor-pointer items-center justify-center'

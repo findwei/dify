@@ -45,6 +45,20 @@ const nextConfig = {
     ]
   },
   output: 'standalone',
+
+  // ~ di-llm-rag-web | Author: webber | Date: 2025-04-02 | 接口代理
+  async rewrites() {
+    return [
+      {
+        source: '/console/api/:path*',
+        destination: 'http://10.12.4.31:5001/console/api/:path*',
+      },
+      {
+        source: '/api/:path*',
+        destination: 'http://10.12.4.31:5001/api/:path*',
+      },
+    ]
+  },
 }
 
 module.exports = withMDX(nextConfig)

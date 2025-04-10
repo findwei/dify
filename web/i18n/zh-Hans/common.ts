@@ -138,7 +138,8 @@ const translation = {
   menus: {
     status: 'beta',
     explore: '探索',
-    apps: '工作室',
+    // apps: '工作室',
+    apps: '智能体', // ~ di-llm-rag-web | Author: webber | Date: 2025-04-10
     plugins: '插件',
     exploreMarketplace: '探索 Marketplace',
     pluginsTips: '集成第三方插件或创建与 ChatGPT 兼容的 AI 插件。',
